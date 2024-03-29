@@ -1,0 +1,68 @@
+#main{
+    cursor: url('../img/black-cursor.svg') 25 15, auto;
+}
+
+.main--home{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    @include device($mobileScreen){
+        height: auto;
+    }
+}
+
+.title{
+    z-index: 9;
+    position: relative;
+    top: 30vh;
+    left: 7vw;
+    transition: all 800ms ease-in-out;
+    animation: text-appear 800ms ease-in-out;
+    cursor: url('../img/cursor-projects.svg') 25 15,auto;
+
+    @keyframes text-appear{
+        0%{
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @include device($mobileScreen){
+        top: 0;
+        left: 0;
+    }
+}
+
+.main-preenter{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #DEDEF0;
+    overflow: hidden;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 1.2s ease-in-out;
+
+    @include device($mobileScreen){
+        display: none;
+    }
+
+    &.hidden{
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

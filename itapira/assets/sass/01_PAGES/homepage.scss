@@ -1,0 +1,91 @@
+.main-content{
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: vw(40px);
+
+    @include device($mobileScreen){
+        gap: 40px;
+    }
+
+    &__catchphrase{
+        width: 61%;
+        padding: 0 vw(60px);
+
+        @include device($mobileScreen){
+            width: fit-content;
+            padding: 0 30px;
+        }
+    }
+
+    .owl-carousel{
+        z-index: 9;
+        .owl-stage{
+         padding-left: 0px !important;
+        }
+
+        .owl-item{
+            &:nth-child(1){
+                &::after{
+                    animation-delay: .4s;
+                }
+            }
+
+            &:nth-child(2){
+                &::after{
+                    animation-delay: .7s;
+                }
+            }
+
+            &:nth-child(3n){
+                &::after{
+                    animation-delay: .6s;
+                }
+            }  
+
+            height: 60vh;
+            position: relative;
+
+            @include device(1439px){
+                height: 67vh;
+            }
+
+            @include device($mobileScreen){
+                height: 71vh;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--color-light);
+                z-index: 9;
+                animation:elevator 1s forwards ease-in-out;
+                @keyframes elevator{
+                    0%{
+                        transform: translateY(0);
+                    }
+                    100%{
+                        transform: translateY(-100%);
+                    }
+                }
+                @include device(600px){
+                    animation: none;
+                    display: none;
+                }
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+
+                
+            }
+        }
+    }
+}

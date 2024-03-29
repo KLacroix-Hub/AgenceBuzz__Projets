@@ -1,0 +1,18 @@
+.m-toolkit-thumb{
+    background: var(--primary-background);
+    border: 1px solid var(--primary-light);
+    overflow: hidden;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: vw(20px);
+        padding: vw(50px) vw(50px);
+        padding-left: 0;
+    }
+
+    &__thumb{
+        background: #fff;
+        height: 100%;
+    }
+}

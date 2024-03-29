@@ -1,0 +1,21 @@
+.m-flex-carrousel {
+
+    .splide__pagination{
+        margin-top: 20px;
+        .splide__pagination__page{
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background: #fff;
+            border: 1px solid var(--primary);
+            display: block;
+            margin: 0px 5px;
+            &:hover{
+                background: var(--primary);
+            }
+            &.is-active{
+                background: var(--primary);
+            }
+        }
+    }
+}

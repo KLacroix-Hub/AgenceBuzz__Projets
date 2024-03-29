@@ -1,0 +1,8 @@
+.m-child-tab{
+    margin: vw(-1px) vw(10px);
+    padding: vw(70px) vw(300px) vw(110px) vw(300px);
+    background: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    gap: vw(30px);
+}

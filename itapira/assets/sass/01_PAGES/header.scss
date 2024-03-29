@@ -1,0 +1,158 @@
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: vw(35px) vw(60px) 0 vw(60px);
+    margin-bottom: vw(15px);
+    z-index: 9999;
+    position: relative;
+
+    @include device(1439px){
+        margin-bottom: vw(40px);
+    }
+
+    @include device($mobileScreen){
+        padding:26px 0 0 30px;
+        margin-bottom: 30px;
+    }
+
+    .logo{
+        overflow: hidden;
+
+        @include device($mobileScreen){
+            z-index: 99;
+        }
+        #home{
+            img{
+                width:100%;
+
+                @include device(1000px){
+                    width: 80%;
+                }
+
+                @include device($mobileScreen){
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__burger{
+        display: none;
+
+       @include device($mobileScreen){
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-right: 30px;
+        cursor: pointer;
+        pointer-events: all;
+
+        &::before,&::after{
+            content:"";
+            width: 24px;
+            height: 1px;
+            background: var(--color-dark);
+            transition: transform 300ms ease-in-out;
+            transform-origin: 50%;
+            z-index: 999 !important;
+        }
+
+        &.active{
+            &::before{
+                transform: rotate(45deg) translate(5px,5px) !important;
+            }
+            &::after{
+                transform: rotate(-45deg) translate(4px,-5px) !important;
+            }
+        }
+       }
+    }
+    .menu{
+        @include device($mobileScreen){
+            width: 100svw;
+            height: 100svh;
+            background: var(--color-light);
+            position: fixed;
+            top: 0;
+            left: 100svw;
+            transition: transform 300ms ease-in-out;
+            z-index: 9;
+        }
+
+        &-nav{
+            display: flex;
+            flex-direction: row;
+            gap: vw(20px);
+            overflow: hidden;
+
+            .trp_language_switcher_shortcode{
+                display: none;
+            }
+
+            @include device($mobileScreen){
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 40px;
+                padding: 0 30px;
+            }
+
+
+            &__link{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                &::after{
+                    content: "";
+                    width: 0;
+                    height: 1px;
+                    background: var(--color-dark);
+                    transition: width 400ms ease-in-out;
+                    margin-top: -2px;
+
+                    @include device($mobileScreen){
+                        display: none;
+                    }
+                }
+
+                &:hover{
+                    &::after{
+                        width: 100%;
+                    }
+                }
+
+                &.active{
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#trp-floater-ls.trp-top-right{
+    position: absolute !important;
+    z-index: 9999 !important;
+    right: 22%;
+    top: 0 !important;
+    background: none;
+    box-shadow: none;
+
+    &:hover{
+        background: none;
+        box-shadow: none;
+    }   
+}
+#trp-floater-ls{
+    height: fit-content !important;
+}
+
+.trp-ls-disabled-language{
+    margin: 0 !important;
+    padding: vw(35px) 0 0 0 !important;
+}

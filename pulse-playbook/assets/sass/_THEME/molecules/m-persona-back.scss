@@ -1,0 +1,14 @@
+.m-persona-back{
+    a{
+        display: flex;
+        flex-direction: row;
+        gap:vw(10px);
+        transition: all .3s ease-in-out;
+        align-items: center;
+        color: var(--primary-light);
+
+        &:hover{
+            gap: vw(15px);
+        }
+    }
+}

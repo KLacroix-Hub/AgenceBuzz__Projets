@@ -1,0 +1,39 @@
+.a-persona-content{
+    border: 2px solid rgba(161, 161, 166, 0.5);
+    border-radius: vw(8px);
+    padding: vw(30px);
+    position: relative;
+    overflow: hidden;
+
+    &.green,&.red{
+        &::after{
+            content: "";
+            width: vw(8px);
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    &.green{
+       &::after{
+         background-color: #42b1b2;
+       }
+    }
+    &.red{
+       &::after{
+         background-color: #92365f;
+       }
+    }
+
+    h2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: vw(20px);
+    }
+
+    p,h2{
+        color: #3f3d56;
+    }
+}

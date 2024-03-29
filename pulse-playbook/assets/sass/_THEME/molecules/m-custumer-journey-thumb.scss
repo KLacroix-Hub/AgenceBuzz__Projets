@@ -1,0 +1,57 @@
+.m-custumer-journey-thumb{
+    padding:vw(40px);
+    border: 1px solid var(--primary-light);
+    background: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: vw(20px);
+    color: var(--primary);
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li{
+            padding: 0;
+            font-weight: 400;
+            color: var(--primary-light);
+        }
+    }
+
+    &-personas{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: vw(-10px);
+        
+        li{
+            margin-left:vw(-10px) ;
+            border-radius: 50%;
+            border: 2px solid var(--primary-background);
+        }
+    }
+    
+    &-persona-avatar{
+        width: vw(50px);
+        height: vw(50px);
+        overflow: hidden;
+        border-radius: 50%;
+        border: 1px solid var(--primary-light);
+
+        @include device($mobileScreen){
+            width: 40px;
+            height: 40px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+    }
+
+}

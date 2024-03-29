@@ -1,0 +1,84 @@
+.o-customer-journey-stages{
+
+    &__head{
+        padding: vw(40px) 0;
+        background: #f6f7f9;
+        margin-bottom: vw(70px);
+
+        .head-stages{
+
+            .stage{
+                min-height: vw(272px);
+                background:var(--color-light);
+                
+                &.active{
+                    background: var(--primary-background);
+                }
+                
+                &-header{
+                    background: var(--primary-light);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding:vw(10px) vw(20px);
+                    border-top-left-radius:vw(6px);
+                    border-top-right-radius:vw(6px);
+
+                    h5{
+                        color: #212529;
+                    }
+                }
+                &-content{
+                    padding: vw(16px) vw(10px);
+                    
+                }
+            }
+
+        }
+    }
+
+    &-filtre{
+        color: #34495e;
+        
+        &.active{
+            font-weight: bold;
+        }
+    }
+
+
+    &-step{
+        display: none;
+
+        .step-single{
+            row-gap: vw(96px);
+        }
+
+        &__type{
+            display: flex;
+            flex-direction: column;
+            gap: vw(15px);
+            
+            h3{
+                color: #3f3d56;
+            }
+
+            img{
+                width: vw(55px);
+                height: vw(55px);
+                object-fit: contain;
+            }
+        }
+
+        &__txt{
+            p{
+                color: #3f3d56;
+            }
+        }
+
+        &.active{
+            display: block;
+        }
+    }
+
+}

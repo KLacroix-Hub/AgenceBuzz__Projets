@@ -1,0 +1,40 @@
+.o-home-bloc-video{
+    margin: vw(90px) 0;
+
+    @include device($mobileScreen){
+        margin: 5px;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: vw(30px);
+        
+        p,h2{
+            color: var(--primary);
+        }
+    }
+
+    &__description{
+        font-weight: 400;
+        color: var(--primary);
+    }
+
+    .video-container{
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    .thumbnail{
+        width: 100%;
+        height: auto;
+    }
+
+    .play-button{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}

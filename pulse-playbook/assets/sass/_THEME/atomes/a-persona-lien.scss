@@ -1,0 +1,16 @@
+.a-persona-lien{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    
+    &__pdf{
+        color: #3f3d56;
+        text-decoration: underline;
+    }
+
+    &__lien{
+        color: var(--primary-light);
+        text-decoration-line: underline;
+    }
+}

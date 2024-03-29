@@ -1,0 +1,40 @@
+.o-welcome {
+  &__content {
+    padding: 50px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    overflow: hidden;
+    border-bottom: 1px solid var(--primary);
+    h1 {
+      font-size: 30px;
+    }
+  }
+  &__btn {
+    background: $white;
+    color: var(--primary);
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    span {
+      margin-right: 10px;
+      display: inline-block;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  iframe {
+    height: 80vh;
+    width: calc(100vw - (100vw - 100%));
+  }
+}
+
+.admin-bar {
+  iframe {
+    height: calc(80vh - 32px);
+  }
+}

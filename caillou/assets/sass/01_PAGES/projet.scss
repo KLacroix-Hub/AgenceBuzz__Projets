@@ -1,0 +1,120 @@
+.main-project{
+    padding: 0 vw(20px);
+
+    @include device($mobileScreen){
+        padding:10px;
+    }
+
+    &__infos{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: vw(60px);
+
+        @include device($mobileScreen){
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .project{
+            &-infos{
+                flex: 30%;
+                text-transform: uppercase;
+                padding-right: vw(110px);
+                
+                p{
+                    line-height: vw(18px); 
+                    
+                    @include device($mobileScreen){
+                        line-height: 18px;
+                    }
+                }
+            }
+            &-presentation{
+                p{
+                    width: 60%;
+                    line-height: vw(19px);
+
+                    @include device($mobileScreen){
+                        width: 100%;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: vw(20px);
+        margin-bottom: vw(50px);
+
+        @include device($mobileScreen){
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__col-one{
+            flex: 100%;
+            img,video{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__col-two{
+            flex: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: vw(20px);
+            overflow: hidden;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+
+            @include device($mobileScreen){
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            img,video{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__credits{
+        margin-bottom: vw(100px);
+        display: flex;
+        flex-direction: column;
+        gap: vw(5px);
+
+        @include device($mobileScreen){
+            gap: 7px;
+        }
+
+        .row{
+            width: 35%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @include device($mobileScreen){
+                width: 100%;
+            }
+
+
+            &-what{
+                text-transform: uppercase;
+                flex:65%
+            }
+            &-who{
+                flex: 35%;
+            }
+        }
+    }
+}

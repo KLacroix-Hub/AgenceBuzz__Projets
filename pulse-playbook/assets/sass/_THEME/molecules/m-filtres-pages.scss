@@ -1,0 +1,28 @@
+.m-filtres-pages{
+    width: 80vw;
+    min-height: vw(260px);
+    background: #FFF;
+    padding: vw(40px) vw(50px);
+    box-shadow: 0px 4px 24px 0px rgba(34, 76, 141, 0.14);
+    position: relative;
+    top: vw(-100px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    &-actions{
+        border-top: 1px solid #134C93;
+        padding-top: vw(30px);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: vw(15px);
+
+        &__cta{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: vw(15px);
+        }
+    }
+}

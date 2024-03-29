@@ -1,0 +1,47 @@
+.m-cases-studies-thumb{
+    article{
+        display: flex;
+        flex-direction: column;
+        gap:vw(10px);
+    }
+    
+    &--small{
+        article{
+            flex-direction: row;
+            gap:vw(20px);
+            .m-cases-studies-thumb__figure{
+                max-width: 40%;
+                margin-bottom: 0;
+            }
+            .m-cases-studies-thumb__title{
+                margin-bottom: vw(10px);
+            }
+        }
+    }
+
+    &__figure{
+        height:fit-content;
+        background:black;
+        border-radius: vw(10px);
+        margin-bottom: vw(10px);
+        overflow: hidden;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title{
+        font-weight: 700;
+        line-height: 100%;
+        color: var(--primary);
+}
+
+    &__date{
+        color: var(--primary);
+        font-weight: 400;
+    }
+   
+}

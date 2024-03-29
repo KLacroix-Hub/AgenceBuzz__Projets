@@ -1,0 +1,56 @@
+.o-hero{
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--primary-background);
+    background-position: bottom right;
+    min-height: vw(400px);
+    position: relative;
+    margin-bottom: vw(100px);
+
+    .page-template-tpl-personas &,.page-template-tpl-customer-journey &{
+        height: 200px;
+    }
+
+    @include device($mobileScreen){
+        min-height: 150px;
+        margin: 5px;
+    }
+
+    &--has-m-filtres-pages{
+        margin-bottom: 0;
+    }
+
+    &::after{
+        content: "";
+        width:50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, #134C93 0%, rgba(19, 76, 147, 0.00) 100%);
+        z-index: 1;
+        border-radius: 36px;
+
+        @include device($mobileScreen){
+            border-radius: 16px;
+        }
+    }
+
+    &__hero{
+        grid-column-start:1;
+        z-index: 2;
+        color: var(--color-light);
+        padding-left: 15px;
+        a{
+            color: var(--color-light);
+            text-decoration: none !important;
+        }
+    }
+
+    h1{
+        position: relative;
+        color: var(--color-light);
+        z-index: 2;
+    }
+}

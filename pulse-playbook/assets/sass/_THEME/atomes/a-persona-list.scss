@@ -1,0 +1,30 @@
+.a-persona-list{
+    border: 2px solid rgba(161, 161, 166, 0.5);
+    border-radius: vw(8px);
+    padding: vw(30px);
+
+    h2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: vw(20px);
+        color: #3f3d56;
+    }
+
+    .drivers{
+
+        &-list{
+            display: flex;
+            flex-direction: column;
+            gap: vw(20px);
+        }
+
+        &-item{
+            padding:vw(8px) vw(16px);
+            border: 2px solid #3f3d56;
+            border-radius: vw(24px);
+            font-weight: 700;
+        }
+
+    }
+}

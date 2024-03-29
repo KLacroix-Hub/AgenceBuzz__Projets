@@ -1,0 +1,169 @@
+.m-navigation{
+    width: 100%;
+    margin-bottom: vw(45px);
+    padding-top: vw(45px);
+    position: relative;
+    top:0;
+    z-index: 9;
+
+    &__container{
+        grid-column-start:3;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+
+        @include device($mobileScreen){
+            grid-column-start:1;
+            padding: 0 15px;
+            align-items: center;
+        }
+    }
+
+    .logo-two{
+        display: none;
+    }
+
+    .burger-menu{
+        display: none;
+        @include device($mobileScreen){
+            display: block;
+        }
+    }
+
+    .burger-menu-two{
+        display: none;
+        @include device($mobileScreen){
+            display: none;
+        }
+    }
+
+    &--scrolled{
+        background-color: var(--color-light);
+        padding-bottom: vw(25px);
+        padding-top: vw(25px);
+        left: 0;
+        top: 0;
+        border-bottom: 1px solid #548EC2;
+        position: fixed;
+        transition: all .2s;
+        margin-top: vw(0px);
+
+        .logo-two{
+            display: block;
+        }
+
+        .burger-menu-two{
+            display: none;
+            @include device($mobileScreen){
+                display: block;
+            }
+        }
+
+        .logo{
+            display: none;
+        }
+
+        .burger-menu{
+            @include device($mobileScreen){
+                display: none;
+            }
+        }
+
+        .menu-principal{
+            a{
+                color: #134C93;
+            }
+        }
+    }
+
+    div{
+        margin: 0;
+    }
+
+    .logo{
+        width: vw(111px);
+        height: auto;
+        object-fit: contain;
+        align-self: center;
+
+        @include device($mobileScreen){
+            width: 80px;
+        }
+    }
+
+    .menu-principal{
+        display: flex;
+        align-items: center;
+        gap: vw(20px);
+
+        &__item{
+            @extend .body;
+            color: var(--color-light);
+            font-size: vw(13px);
+
+            @include device($mobileScreen){
+                font-size: 16px;
+            }
+        }
+    }
+
+    .menu-secondaire{
+        display: flex;
+        align-items: center;
+        gap: vw(15px);
+
+    }
+
+    .menu-container{
+        display: flex;
+        flex-direction: row;
+        gap: vw(90px);
+
+        &__close{
+            display: none;
+
+            @include device($mobileScreen){
+                display: block;
+                position: absolute;
+                top: 25px;
+                right: 25px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+
+
+        &.active{
+            @include device($mobileScreen){
+                transform: translateX(-100vw);
+                z-index: 999;
+            }
+        }
+
+        @include device($mobileScreen){
+            position: fixed;
+            top: 0;
+            left: 100vw;
+            width: 100svw;
+            height: 100svh;
+            padding: 0 60px;
+            background: #134C93;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            transition: transform 500ms ease-in-out;
+
+
+            .menu-principal, .menu-secondaire{
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+        }
+    }
+}

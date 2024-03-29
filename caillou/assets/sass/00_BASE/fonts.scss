@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Dazzed-Regular';
+    src: url('../fonts/Dazzed-Regular.woff') format('woff');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family:'Dazzed- Bold';
+    src: url('../fonts/Dazzed-Bold.woff') format('woff');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+    }   
+
+
+.headline{
+    font-family: 'Dazzed-Regular',"Helvetica",sans-serif;
+
+    &-xl{
+        font-size: vw(160px);
+        line-height: vw(130px);
+        color: var(--color-dark);
+
+        @include device($mobileScreen){
+            font-size:50px;
+            line-height:45px;
+
+            .single-projets &,.page-template-about &{
+                font-size: 50px;
+                line-height: 50px;
+            
+            }
+        }
+    }
+
+    &-lg{
+        font-size: vw(100px);
+        line-height: vw(80px);
+        color: var(--color-dark);
+
+        @include device($mobileScreen){
+            font-size:40px;
+            line-height:40px;
+        }
+    }
+
+    &-md{
+        font-size: vw(50px);
+        color: var(--color-dark);
+
+        @include device($mobileScreen){
+            font-size:25px;
+        }
+    }
+
+    &-sm{
+        font-size: vw(40px);
+        color: var(--color-dark);
+
+        @include device($mobileScreen){
+            font-size:18px;
+        }
+    }
+
+    &-highlight{
+        font-size: vw(30px);
+        color: var(--color-dark);
+    }
+}
+
+.body{
+    font-family: 'Dazzed-Regular',serif;
+
+    &-xl{
+        font-size: vw(20px);
+        color: var(--color-dark);
+        line-height: vw(22px);
+
+        @include device($mobileScreen){
+            font-size:18px;
+            line-height:20px;
+        }
+    }
+
+    &-strong{
+        font-family: 'Dazzed-Bold',serif;
+        font-size: vw(20px);
+        color: var(--color-dark);
+        line-height: vw(22px);
+
+        @include device($mobileScreen){
+            font-size:18px;
+            line-height:20px;
+        }
+    }
+    
+    &-highlight{
+        font-size: vw(15px);
+        line-height: vw(15px);
+
+        @include device($mobileScreen){
+            font-size:15px;
+            line-height:15px;
+        }
+    }
+}

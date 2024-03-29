@@ -1,0 +1,52 @@
+.o-home-hero{
+    position: relative;
+    min-height: vw(500px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: vw(10px);
+    border-radius: vw(30px);
+    margin-bottom: vw(20px);
+    overflow: hidden;
+
+    @include device($mobileScreen){
+        margin: 5px;
+    }
+
+    &::after{
+        content: "";
+        width:100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(90deg, rgba(19, 76, 147, 0.85) 0%, rgba(17, 151, 214, 0.85) 46.71%, rgba(147, 211, 241, 0.85) 85.42%);
+        z-index: 0;
+    }
+
+    &-logo{
+        z-index: 2;
+        
+        @include device($mobileScreen){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .hero{
+        z-index: 2;
+        grid-column-start:3;
+        display: flex;
+
+        @include device($mobileScreen){
+            grid-column-start:1;
+            padding: 0 15px;
+        }
+
+        &-title{
+            color: var(--color-light);
+            padding-bottom: vw(20px);
+        }
+    }
+
+}

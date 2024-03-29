@@ -1,0 +1,28 @@
+.m-persona-sidebar {
+  padding-top: vw(15px);
+
+  .m-persona-thumb{
+    margin-bottom: vw(10px);
+  }
+
+  .item {
+    padding: 18px 0;
+    border-bottom: 1px solid #f6f7f9;
+
+    .title-others{
+      margin-bottom: vw(10px);
+    }
+
+    li {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .comp-personas-thumb {
+      display: block;
+      margin: 8px 0;
+    }
+  }
+}

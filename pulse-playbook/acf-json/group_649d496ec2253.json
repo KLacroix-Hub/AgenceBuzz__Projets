@@ -1,0 +1,79 @@
+{
+    "key": "group_649d496ec2253",
+    "title": "Theme",
+    "fields": [
+        {
+            "key": "field_649d496ec4b94",
+            "label": "Thème",
+            "name": "tax_theme",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "orange": "Orange",
+                "vert": "Vert",
+                "blue-light": "Bleu clair",
+                "blue-dark": "Bleu foncé",
+                "purple": "Pourpre",
+                "purple-dark": "Pourpre foncé",
+                "red": "Rouge"
+            },
+            "default_value": "blue-light",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "allow_custom": 0,
+            "search_placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "type-evenement"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "custumer-groupe"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "categorie-toolkit"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1694766168
+}

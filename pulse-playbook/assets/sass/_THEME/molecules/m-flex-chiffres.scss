@@ -1,0 +1,14 @@
+.m-flex-chiffres {
+    &-item{
+        display: flex;
+        flex-direction: column;
+        gap: vw(10px);
+        padding: vw(60px);
+        background: var(--primary-background);
+        border: 1px solid var(--primary-light);
+
+        h3{
+            font-size: vw(60px);
+        }
+    }
+}

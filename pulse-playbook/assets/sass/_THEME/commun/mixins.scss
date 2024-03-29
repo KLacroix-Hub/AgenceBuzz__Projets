@@ -1,0 +1,27 @@
+//function to convert pixel to vw
+@function vw($px,$base-vw: 1440px) {
+    @return calc(($px * 100vw) / $base-vw);
+}
+
+@function nbCol($nb){
+    $col:8.3333333333vw;
+    @return $col * $nb;
+}
+
+@function sizeCol($nb){
+    $col:8.3333333333vw;
+    @return calc($col * $nb - vw(10px));
+}
+
+@mixin device($size) {
+    @media (max-width: $size) { @content; }
+}
+
+// html{
+//     scroll-behavior: initial;
+// }
+
+// body{
+//     width: 100vw;
+//     overflow-x: hidden;
+// }

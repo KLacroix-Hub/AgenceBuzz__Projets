@@ -1,0 +1,27 @@
+.o-services-sg{
+    background: var(--primary-background);
+    padding: vw(50px);
+    border-radius: vw(30px);
+    margin: 0 10px;
+    color: var(--primary);
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    @include device($mobileScreen){
+        border-radius: 20px;
+    }
+
+    h2{
+        width: 60%;
+    }
+
+    p{
+        font-weight: 400;
+        line-height: 150%;
+    }
+}

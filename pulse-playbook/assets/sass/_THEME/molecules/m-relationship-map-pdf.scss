@@ -1,0 +1,39 @@
+.m-relationship-map-pdf{
+    margin-bottom: vw(70px);
+    .map{
+        margin-bottom: vw(30px);
+    }
+    .download{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: vw(120px);
+        border-bottom: 1px solid #3f3d56;
+        padding-bottom: vw(56px);
+
+        &-title{
+            color:inherit;
+        }
+
+        &-material{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: vw(28px);
+            padding: vw(24px);
+            background: #f6f7f9;
+            border-radius: vw(8px);
+
+            .ui-btn{
+                padding: vw(12px) vw(32px);
+                background: var(--primary-light);
+                color: var(--color-light);
+                border-radius: vw(24px);
+            }
+
+            .material-title{
+                color:inherit;
+            }
+        }
+    }
+}

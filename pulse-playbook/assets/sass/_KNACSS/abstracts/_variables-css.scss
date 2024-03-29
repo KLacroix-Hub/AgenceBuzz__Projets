@@ -1,0 +1,14 @@
+:root {
+    --body-color: #34495e;
+    --body-bg: #ffff;
+    
+    --primary: #b1afff;
+    --primary-light: #c9c8ff;
+    --primary-background: #efeeff;
+    --primary-accent: #e55039; // Modifieur de couleur dominante (survol, bordure)
+    --on-primary: #ffff; // Contenus (texte, lien, icône) affichés par-dessus une couche $primary
+    
+    --secondary: #008cba; // Couleur d'accentuation. Elle s'applique généralement aux liens, mais peut s'appliquer à la fois à des surfaces ou à des contenus.
+    --secondary-accent: #027da7; // Modifieur de couleur d'accentuation (survol, bordure)
+    --on-secondary: #fff; // Contenus affichés par-dessus une couche $secondary
+}

@@ -1,0 +1,7 @@
+.o-liste-personas-journey{
+    margin-bottom: vw(110px);
+
+    @include device($mobileScreen){
+        margin: 5px 5px 30px 5px;
+    }
+}

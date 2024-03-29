@@ -1,0 +1,89 @@
+.m-nouvelle-pop{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: vw(20px);
+    overflow: hidden;
+    background: var(--primary-background);
+    margin-left:vw(120px);
+    opacity: 1;
+    transition: all 0.5s;
+    transform: translate3d(0, 0, 0);
+    color: var(--primary-light);
+    border: 1.5px solid var(--primary-light);
+    border-radius: vw(30px);
+    margin-bottom: vw(15px);
+    position: relative;
+    z-index: 2;
+
+    @include device($mobileScreen){
+        width: 93%;
+        margin: 0 15px 10px 15px;
+        justify-content: space-between;
+    }
+
+    div{
+        margin : 0;
+    }
+
+    &__title{
+        height: 100%;
+        background: rgba(243, 110, 33, 0.3);    
+        padding: vw(10px) vw(20px);
+    }
+
+    &__object{
+        gap: vw(16px);
+    }
+
+    &__more{
+        padding-right: vw(10px);
+        margin-left: vw(20px);
+        gap: vw(15px);
+
+        .a-boutton{
+            
+        }
+
+        .js-close-pop{
+            width: vw(27px);
+            height: vw(27px);
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            @include device($mobileScreen){
+                width: 15px;
+                height: 15px;
+                padding: 0;
+            }
+
+            img{
+                width: 70%;
+                height: 70%;
+                object-fit: contain;
+
+                @include device($mobileScreen){
+                    width: 50%;
+                    height: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    &.js-animate-close{
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+}

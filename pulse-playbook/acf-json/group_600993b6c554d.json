@@ -1,0 +1,173 @@
+{
+  "key": "group_600993b6c554d",
+  "title": "Personas - Description",
+  "fields": [
+    {
+      "key": "field_600993cc5c5d6",
+      "label": "Story",
+      "name": "persona_story",
+      "type": "wysiwyg",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "tabs": "all",
+      "toolbar": "full",
+      "media_upload": 0,
+      "delay": 0
+    },
+    {
+      "key": "field_600994475c5d7",
+      "label": "Drivers",
+      "name": "persona_drivers",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "row",
+      "button_label": "",
+      "sub_fields": [
+        {
+          "key": "field_600994605c5d8",
+          "label": "Value",
+          "name": "personas_drivers_value",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    },
+    {
+      "key": "field_60099494b4e6f",
+      "label": "Work Routines",
+      "name": "persona_work_routines",
+      "type": "wysiwyg",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "tabs": "all",
+      "toolbar": "full",
+      "media_upload": 0,
+      "delay": 0
+    },
+    {
+      "key": "field_600994d32392a",
+      "label": "Digital Habits",
+      "name": "persona_digital_habits",
+      "type": "wysiwyg",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "tabs": "all",
+      "toolbar": "full",
+      "media_upload": 0,
+      "delay": 0
+    },
+    {
+      "key": "field_600994ee2392b",
+      "label": "Needs",
+      "name": "persona_needs",
+      "type": "wysiwyg",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "tabs": "all",
+      "toolbar": "full",
+      "media_upload": 0,
+      "delay": 0
+    },
+    {
+      "key": "field_600994fb2392c",
+      "label": "Frustrations",
+      "name": "persona_frustrations",
+      "type": "wysiwyg",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "tabs": "all",
+      "toolbar": "full",
+      "media_upload": 0,
+      "delay": 0
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "persona"
+      },
+      {
+        "param": "post_taxonomy",
+        "operator": "==",
+        "value": "type-persona:pulse"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": [
+    "the_content",
+    "excerpt",
+    "discussion",
+    "comments",
+    "revisions",
+    "author",
+    "format",
+    "send-trackbacks"
+  ],
+  "active": true,
+  "description": "",
+  "modified": 1665567507
+}

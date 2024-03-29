@@ -1,0 +1,62 @@
+.m-persona-info{
+
+    .personas-photo{
+        width: 100%;
+        height: 100%;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: vw(8px);        
+            border-bottom-left-radius: vw(8px);        
+        }
+    }
+
+    .personas-metas{
+        padding: vw(30px);
+        border-radius: vw(8px);
+        border: 2px solid rgba(161, 161, 166, 0.5);
+
+        .infos{
+            .tag-list{
+                display: flex;
+                flex-direction:column;
+                gap: vw(10px);
+
+                .ui-tag{
+                    background: var(--primary-light);
+                    border-radius: vw(24px);
+                    color: var(--color-light);
+                    padding: vw(7px) vw(16px);
+                    line-height: 90%;
+                }
+            }
+
+        }
+
+        .meta{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            &-label{
+                color: #a1a1a6;
+                font-weight: 500;
+            }
+            &-value{
+                color: var(--primary);
+                font-weight:700;
+                text-decoration-line: none !important;
+            }
+        }
+
+        .ligne{
+            display: flex;
+            flex-direction: row;
+            gap: vw(30px);
+            &-1{
+            }
+        }
+    }
+}

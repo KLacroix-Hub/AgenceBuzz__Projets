@@ -1,0 +1,14 @@
+//BASE
+@import "00_BASE/mixins";
+@import "00_BASE/variables";
+@import "00_BASE/fonts";
+@import "00_BASE/lenis";
+@import "00_BASE/reset";
+
+//PAGES
+@import "01_PAGES/header";
+@import "01_PAGES/homepage";
+@import "01_PAGES/brands";
+@import "01_PAGES/about";
+@import "01_PAGES/contact";
+@import "01_PAGES/transition-page";

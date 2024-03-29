@@ -1,0 +1,55 @@
+.o-flexs{
+    
+    display: flex;
+    flex-direction: column;
+    gap: vw(50px);
+    margin-bottom: vw(50px);
+    @extend .body, .body-lg;
+
+    @include device($mobileScreen){
+        padding: 5px
+    }
+    
+    h3{
+        @extend .headline, .headline-md;
+        margin-bottom: vw(20px);
+    }
+    
+    h4{
+        @extend .headline, .headline-sm;
+        margin-bottom: vw(20px);
+    }
+    
+    p{
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: vw(20px);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    
+    .image{
+        width: 100%;
+    }
+    
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    strong,b{
+        font-weight: 700;
+    }
+    
+    i,em,cite{
+        font-style: italic;
+    }
+    
+    ul{
+        list-style: disc;
+        margin-bottom: vw(20px);
+        padding-left: vw(20px);
+    }
+
+}

@@ -1,0 +1,17 @@
+.m-flex-contenu {
+    padding: vw(30px);
+    background: var(--primary-background);
+    border-radius: vw(10px);
+    color: var(--primary-light);
+
+    @include device($mobileScreen){
+        border-radius: 10px;
+    }
+
+    b{
+        width: 100%;
+        display: block;
+        margin-bottom: vw(20px);
+        @extend .headline, .headline-filter;
+    }
+}

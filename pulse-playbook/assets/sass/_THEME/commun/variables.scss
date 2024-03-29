@@ -1,0 +1,56 @@
+// RESPONSIVE SIZES
+$mobileScreen : 600px;
+$DesktopMd:1024px;
+
+:root{
+     //FONT SIZE
+        //HEADLINE
+        --headline-lg: #{vw(60px)};
+        --headline-section:#{vw(54px)};
+        --headline-md: #{vw(36px)};
+        --headline-filter: #{vw(24px)};
+        --headline-sm: #{vw(26px)};
+        --headline-xs: #{vw(13px)};
+        --headline-persona: #{vw(30px)};
+
+        @include device($DesktopMd){
+            --headline-xs: 11px;
+        }
+
+        @include device($mobileScreen){
+            --headline-lg: 40px;
+            --headline-section: 36px;
+            --headline-md: 24px;
+            --headline-filter: 16px;
+            --headline-sm: 18px;
+            --headline-xs: 9px;
+            --headline-persona: 20px;
+        }
+
+        //BODY
+        --body-highlight: #{vw(22px)};
+        --body-tab: #{vw(20px)};
+        --body-xl: #{vw(18px)};
+        --body-lg: #{vw(16px)};
+        --body-md: #{vw(14px)};
+        --body-sm: #{vw(12px)};
+        --body-xs: #{vw(10px)};
+
+        @include device($mobileScreen){
+            --body-highlight: 16px;
+            --body-tab: 16px;
+            --body-xl: 14px;
+            --body-lg: 12px;
+            --body-md: 10px;
+            --body-sm: 8px;
+            --body-xs: 6px;
+        }
+
+        //COLUMNS
+            //12 COLUMNS BASE
+            --col: 8.333vw;
+
+        //COLORS
+        --color-light: #fff;
+        --color-dark:#000;
+}

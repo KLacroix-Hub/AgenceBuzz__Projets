@@ -1,0 +1,65 @@
+.a-filtre-pages{
+    display: flex;
+    flex-direction: column;
+    gap: vw(15px);
+    margin-bottom:vw(30px) ;
+
+    h3{
+        font-weight: 400;
+    }
+
+    &-responses{
+        width: 60%;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap: vw(10px);
+
+        label, .label{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: vw(30px);
+            gap: vw(6px);
+            padding: vw(8px) vw(15px);
+            background: #D9F3FF;
+
+            input[type="radio"]{
+                width: vw(13px);
+                height: vw(13px);
+                /* Add if not using autoprefixer */
+                -webkit-appearance: none;
+                appearance: none;
+                /* For iOS < 15 to remove gradient background */
+                background-color: #fff;
+                /* Not removed via appearance */
+                margin: 0;
+                border-radius: 3px;
+                border: 1px solid #134C93;
+                background: #CCDEFB;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &::before{
+                    content: "";
+                    width: vw(7px);
+                    height: vw(7px);
+
+                }
+
+                &:checked{
+                    background: #fff;
+                    &::before{
+                        background: #224C8D;
+                    }
+                }
+            }
+
+            span{
+                font-weight: 400;
+                color: #134C93;
+            }
+        }
+    }
+}

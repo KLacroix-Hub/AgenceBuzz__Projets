@@ -1,0 +1,30 @@
+.o-persona-community{
+    padding-top: vw(30px);
+
+    @include device($mobileScreen){
+        padding-top: 30px;
+        margin: 5px;
+    }
+
+    .other-personas{
+        background-color: #f6f7f9;
+        padding: vw(70px) 0;
+
+        h2{
+            color: inherit;
+        }
+
+        .splide__arrows{
+            display: none;
+        }
+    }
+
+    .shared{
+        span{
+            font-weight: 400;
+        }
+        b{
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.c-theme{
+
+    &--theming-text{
+        color : var(--primary)
+    }
+
+    &--theming-content{
+        color : var(--primary);
+        h1, h2, h3, h4{
+            color: var(--primary);
+        }
+    }
+
+    &--svg{
+        svg, path, rect{
+            fill: var(--primary);
+        }
+    }
+
+    &--default{
+        --primary: #0587C3;
+        --primary-light: #1197D6;
+        --primary-background: #D9F3FF;
+    }
+
+    &--white{
+        --primary: #fff;
+        --primary-light: #fff;
+        --primary-background: #fff;
+    }
+    
+    &--vert{
+        --primary: #279899;
+        --primary-light: #42B1B2;
+        --primary-background: #D0F0F0;
+    }
+    
+    &--blue-light{
+        --primary: #0587C3;
+        --primary-light: #1197D6;
+        --primary-background: #D9F3FF;
+    }
+
+    &--blue{
+        --primary:#224C8D;
+        --primary-light:#E6EBF3;;
+        --primary-background:#F4F9FE;
+        --primary-button:#134C93;
+    }
+    
+    &--blue-dark{
+        --primary: #224C8D;
+        --primary-light: #134C93;
+        --primary-background: #D4E1F2;
+    }
+    
+    &--red{
+        --primary: #CE0A33;
+        --primary-light: #EE1844;
+        --primary-background: #F9D9DF;
+    }
+    
+    &--orange{
+        --primary: #D75408;
+        --primary-light: #F36E21;
+        --primary-background: #FFE9DC;
+    }
+    
+    &--purple{
+        --primary: #7A274C;
+        --primary-light: #92365F;
+        --primary-background: #EDD7E1;
+    }
+
+    &--purple-dark{
+        --primary: #503D77;
+        --primary-light: #5D4A84;
+        --primary-background: #DDD4EE;
+    }
+
+}
+

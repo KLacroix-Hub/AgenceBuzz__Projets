@@ -1,0 +1,18 @@
+.o-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: vw(20px) vw(60px);
+
+
+    img{
+        width: vw(160px);
+        height: auto;
+        object-fit: contain;
+
+        @include device($mobileScreen){
+            width: 100px;
+        }
+    }
+}

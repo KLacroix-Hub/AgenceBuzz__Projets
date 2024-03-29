@@ -1,0 +1,62 @@
+.o-home-bloc-equipe{
+    margin-bottom: vw(150px);
+
+    @include device($mobileScreen){
+        margin: 5px 5px 30px 5px;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: vw(20px);
+        h2,p{
+            color: var(--primary);
+        }
+    }
+
+    &__description{
+        font-weight: 400;
+        color: var(--primary);
+        line-height: 150%;
+    }
+
+    &-list{
+        display: flex;
+        
+        @include device($mobileScreen){
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            row-gap: 20px;
+        }
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: vw(14px);
+
+            &:nth-last-child(-n+4){
+                margin-left: vw(-30px);
+            }
+        }
+        h6{
+            margin-bottom: vw(-10px);
+        }
+
+        &__figure{
+            width:vw(190px);
+            height:vw(190px);
+            border: vw(10px) solid var(--color-light);
+            border-radius: 50%;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 2px solid var(--primary-light);
+
+            }
+        }
+    }
+}

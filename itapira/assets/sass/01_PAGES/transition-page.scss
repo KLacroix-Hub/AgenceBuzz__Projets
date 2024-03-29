@@ -1,0 +1,93 @@
+.transition{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--color-light);
+    background-position-x: -100vw;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: vw(20px);
+    transition: all 500ms ease-in-out;
+    pointer-events: none;
+
+    @include device($mobileScreen){
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    img{
+        @include device($mobileScreen){
+            width: 40%;
+        }
+    }
+
+    &.active{
+        opacity: 1;
+        z-index: 9999;
+        background-position-x: 0;
+
+        .transition-loading{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: vw(20px);
+
+            @include device($mobileScreen){
+                flex-direction: column;
+            }
+
+            &__progress{
+                width: vw(160px);
+                height: 2px;
+                display: flex;
+                flex-direction: row;
+                background:rgba($color: #2A2A2A, $alpha: .2);
+
+                @include device($mobileScreen){
+                    width: 160px;
+                    margin-bottom: 10px;
+                }
+    
+                &::before{
+                    content:"";
+                    width: 0;
+                    height: 100%;
+                    background: #2A2A2A;
+                    animation: loading 2.5s ease-in-out;
+                }
+    
+                @keyframes loading {
+                    from{
+                        width: 0%;
+                    }
+                    to{
+                        width: 100%;
+                    }
+                }
+            }
+    
+            &::after{
+                content: "0%";
+                animation: percentage 2.5s ease-in-out;
+                @include device($mobileScreen){
+                    font-size: 18px;
+                }
+    
+                @keyframes percentage { 
+                    @for $i from 1 through 100 {
+                      $percentage: $i + "%";
+                      #{$percentage} {
+                        content: $percentage;
+                      }
+                    }
+                  }
+            }
+        }
+    }
+}

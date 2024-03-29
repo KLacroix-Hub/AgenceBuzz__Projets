@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+.headline{
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 500;
+
+    &-lg{
+        font-size: var(--headline-lg);
+        font-weight: 700;
+        line-height: vw(71px);
+
+        @include device($mobileScreen){
+            line-height: 40px;
+        }
+    }   
+
+    &-section{
+        font-size: var(--headline-section);
+        line-height: var(--headline-section);
+    }
+
+    &-md{
+        font-size: var(--headline-md);
+        line-height:var(--headline-md);
+    }
+
+    &-filter{
+        font-size: var(--headline-filter);
+        font-weight: 400;
+    }
+
+    &-sm{
+        font-size: var(--headline-sm);
+    }
+
+    &-xs{
+        font-size: var(--headline-xs);
+    }
+
+    &-persona{
+        font-size: var(--headline-persona);
+        font-weight: 700;
+    }
+
+}
+
+.body{
+    font-family: "Ubuntu",sans-serif;
+
+    &-highlight{
+        font-size: var(--body-highlight);
+        font-weight: 500;
+        line-height: 170%;
+    }
+
+    &-tab{
+        font-size: var(--body-tab);
+        font-weight: 400;
+        text-decoration-line: underline !important;
+    }
+
+    &-xl{
+        font-size: var(--body-xl);
+        font-weight: 400;
+    }
+
+    &-lg{
+        font-size: var(--body-lg);
+        font-weight: 500;
+
+        .m-flex-contenu & {
+            font-weight: 400;
+        } 
+
+        .m-flex-chiffres-item &{
+            font-weight: 500;
+        }
+    }
+
+    &-md{
+        font-size: var(--body-md);
+        font-weight: 500;
+    }
+
+    &-sm{
+        font-size: var(--body-sm);
+        font-weight: 400;
+    }
+
+    &-xs{
+        font-size: var(--body-xs);
+        font-weight: 500;
+
+        .a-boutton &{
+            font-size: 16px;
+        }
+    }
+}
